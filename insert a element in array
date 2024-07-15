@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class main{
+    public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+   int n=sc.nextInt();
+   int a[]=new int[n];
+   int newA[]=new int[a.length+1];
+   int pos;
+   int val;
+   for(int i=0;i<a.length;i++)
+   
+       a[i]=sc.nextInt();
+       pos=sc.nextInt();
+       val=sc.nextInt();
+  
+   for(int i=0;i<newA.length;i++){
+   if(i<pos-1){
+       newA[i]=a[i];
+   }
+   else if(i==pos-1){
+       newA[i]=val;
+   }
+   else
+   {
+       newA[i]=a[i-1];
+   }
+   }
+   for(int i=0;i<newA.length;i++)
+   {
+       System.out.println(newA[i]+" ");
+   }
+    }
+}
