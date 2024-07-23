@@ -1,0 +1,22 @@
+
+class area {
+    static double  cir(double  r)
+    {
+        return 3.14*r*r;
+    }
+    static double tri(double b,double h)
+    {
+        return 0.5*b*h;
+    }
+    static int rec(int l, int w)
+    {
+        return l*w;
+    }
+}
+public class main{
+public static void main(String[]args){
+    System.out.println(area.cir(5));
+    System.out.printf("%.2f\n",area.tri(6.0,1.2));
+    System.out.println(area.rec(6,2));
+}
+}
